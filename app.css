@@ -1,0 +1,142 @@
+/*reglas generales*/
+
+/*2. b) Crea una clase para que puedas aplicarle el color #037BC0 a la palabra Muebles en
+el titulo Tienda Muebles y que luzca como la imagen maqueta.jpg.*/
+.Titulo span {
+    color:#037BC0;
+}
+
+/*
+ *{
+    font-size:62.5;
+} */
+
+/*2 c) Para el cuerpo de la página, utiliza la fuente Raleway de Google Fonts, tamaño de
+imagen 1.6rem y una distancia entre líneas de 2.*/
+
+body{
+    font-family: 'Raleway', sans-serif;
+    line-height: 2;    
+}
+img{
+    max-width: 80%;
+  display: block;
+   height:auto;
+   width: auto;
+} 
+
+.Hero img{
+    height: 40%;
+    width: auto;  
+}
+/*d) Para los diferentes títulos, utiliza la fuente Playfair de Google Fonts.
+h1 tamaño de fuente 5rem.
+h2 tamaño de fuente 4rem.
+H3 tamaño de fuente 4rem.*/
+
+h1 h2 h3{
+    font-family: 'Playfair', sans-serif;
+}
+h1{ font-size: 5rem;}
+h2 h3 {font-size: 4rem;}
+
+
+
+/*En el HTML, realiza las siguientes modificaciones para que tu código muestre una página
+más parecida a la de la maqueta:
+Utiliza Flexbox para que las opciones del navbar se distribuyan uniformemente en
+toda la longitud de la página.*/
+nav ul{
+    display:flex;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;   
+
+}
+
+/*Utiliza Flexbox o Grid para que la sección de productos luzca como la maqueta.*/
+  
+    /* esta es otra manera de establecer el valor en grid, primer valor cantidad de columnas y el segundo valor el tamaño de la columna a lo ancho  */
+    /* grid-template-columns: repeat(3, 1fr); */
+    /* espacio entre elementos */
+
+
+main {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    gap: 10px;
+    background-color: #2196F3;
+    padding: 10px;
+}
+
+.Columna-1{
+    grid-column: 1/ span 4;
+    justify-content: space-between;
+}
+
+.Columna-2{
+    grid-column: 5/ span 2;
+}
+
+.Columna-3{
+    grid-column: 1/ span 3;
+    justify-content: space-between;
+}
+ 
+.Columna-4{
+    grid-column: 4/ span 3;
+}
+
+.Columna-5{
+    grid-column: 1/ span 3;
+}
+ 
+.Columna-6{
+    grid-column: 4/ span 3;
+}
+
+.Columna-7{
+    grid-column: 1/ span 2;
+}
+.Columna-8{
+    grid-column: 3/ span 2;
+}
+.Columna-9{
+    grid-column: 5/ span 2;
+}
+
+
+
+.catego {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 10px;    
+    padding: 10px;
+}
+
+
+.Pie {
+    display: grid;
+    grid-template-columns: auto auto auto ;
+    gap: 10px;    
+    padding: 10px;
+}
+
+
+.Pie nav ul{
+    display:flex;
+    flex-direction: column;
+    list-style: none;
+    align-items: center;
+    justify-content: space-between;   
+
+}
+.Pie h2{
+    align-items: center;
+    justify-content: space-between;  
+}
+/*Media Query*/
+
+/** Reescribir colores */
+
+/** Productos */

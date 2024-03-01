@@ -1,0 +1,228 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- 2.1. Dentro del archivo HTML, enlaza el archivo CSS al HTML.-->
+    <link rel="stylesheet" href="./app.css">
+
+
+
+    <!-- 1. Crear un header -->
+    <title>Proyecto final frontend- tienda de muebles</title>
+
+
+    <!-- 5. Importa las fuentes Playfair y Relaway de Google FontSync.-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Raleway&display=swap" rel="stylesheet">
+
+
+</head>
+
+<body>
+    <!-- 2.Crea un span para el título Tienda Muebles y aplícale el color #037BC0 a la palabra Muebles.-->
+    <!-- <header class="Titulo">
+            <h1 style="font-family: 'Raleway', sans-serif;">TIENDA DE <span style="color: #037BC0;">MUEBLES</span></h1>
+    </header> -->
+
+    <!-- 2.2 a) Crea una clase para que puedas aplicarle el color #037BC0 a la palabra Muebles en
+    el titulo Tienda Muebles y que luzca como la imagen maqueta.jpg. -->
+    <header class="Titulo">
+        <h1>TIENDA DE <span>MUEBLES</span></h1>
+    </header>
+
+    <!-- 3. Crea la barra de navegación (nav) con al menos cinco opciones-->
+    <nav>
+        <ul>
+            <li><a href="">Inicio</a></li>
+            <li><a href="">Nosotros</a></li>
+            <li><a href="">Tienda</a></li>
+            <li><a href="">Blog</a></li>
+            <li><a href="">Galeria</a></li>
+            <li><a href="">Contacto</a></li>
+        </ul>
+    </nav>
+
+    <!-- 4. Crea un div para la sección hero.
+    <section id="Hero">
+                    <img src="./principal.jpg" alt="Imagen principal">
+    </section> -->
+    <!-- 2.3. Crea una clase hero y establece una imagen de fondo (utiliza la imagen principal.jpg).
+    Realiza los cambios para que en el formato normal se vea de 25rem. Confirma que la
+    imagen se vea completa, estableciendo el valor cover para el tamaño y la posición del fondo.-->
+    <section Class="Hero">
+        <img src="./principal.jpg" alt="Imagen principal">
+    </section>
+
+    <!-- 7. Utiliza la etiqueta para crear la sección principal de la página-->
+
+    <!-- 6. Coloca el título de la sección con h2.-->
+    <h2 style="font-family: 'Raleway', sans-serif;">Nuestros productos</h2>
+    <main>
+        <!-- 8.Crea dos columnas en la primera fila. En la primera columna, coloca la imagen del producto 1. 
+        En la segunda columna, agrega un fondo azul,
+        así como el nombre del producto (h3), la descripción, el precio y un botón de “agregar al carrito”.-->
+
+
+        <!-- columna 1 -->
+        <div class="Columna-1">
+            <img src="./producto1.jpg" alt="">
+        </div>
+
+        <!-- columna 2 -->
+        <div style="background-color:#acd8f1" class="Columna-2">
+            <h3 style="font-family: 'Raleway', sans-serif;">2 Recamara Juvenil blanca</h3>
+            <p class="txt descripcion" style="font-size: large;">Estilo modernista, pensada en adolescentes.</p>
+            <span style="font-size: large">
+                Consta de cabecera, box, colchon, mueble tipo closet con escritorio. No incluye la silla.
+                Fabricada en madera de pino
+            </span>
+            <span style="font-size: larger;">Precio $20,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+
+
+        <!-- 9. En la siguiente fila, crea dos columnas. En cada una de ellas, coloca las imágenes de los productos 2 y 3, respectivamente. 
+                Dentro de un div, coloca la información del producto (nombre, descripción, precio y el botón de “agregar al carrito”) con el fondo azul.-->
+        <!-- columna 1 -->
+
+        <div class="Columna-3">
+            <img src="./producto2.jpg" alt="">
+        </div>
+        <div class="Columna-4">
+            <img src="./producto3.jpg" alt="">
+        </div>
+        <div style=background-color:#acd8f1 class="Columna-5">
+            <h3 style="font-family: 'Raleway', sans-serif;">Consola de entrada</h3>
+            <p style="font-size: large;">Practica y espacioso para la entrada </p>
+            <p style="font-size: large;">Fabricada en madera de pino, con finos acabados. En varios colores
+            </p>
+            <span style="font-size: larger;">Precio $8,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+        <div style=background-color:#acd8f1 class="Columna-6">
+            <h3 style="font-family: 'Raleway', sans-serif;">Recamara Matrimonial</h3>
+            <p style="font-size: large;">Estio modernista</p>
+            <p style="font-size: large;">Consta de cabecera y buros estilo mesa redonda. Fabricada en madera de
+                pino</p>
+            <span style="font-size: larger;">Precio $15,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+
+        <!-- 10. Crea una fila y tres columnas para que coloques la imagen 4, 5 y 6, respectivamente. 
+                En cada columna, coloca un div con la información del producto (nombre, descripción, precio y el botón de “agregar al carrito”) con el fondo azul.-->
+        <div class="Columna-7">
+            <img src="./producto4.jpg" alt="">
+        </div>
+        <div class="Columna-8">
+            <img src="./producto5.jpg" alt="">
+        </div>
+        <div class="Columna-9">
+            <img src="./producto6.jpg" alt="">
+        </div>
+        <div style=background-color:#acd8f1 class="Columna-10">
+            <h3 style="font-family: 'Raleway', sans-serif;">Hermoso sillon de 3 plazas</h3>
+            <p style="font-size: large;">Cómodo y Practico para sala o cuarto de TV </p>
+            <p style="font-size: large;">Tela 100% lavable y finos acabados. En varios colores</p>
+            <span style="font-size: larger;">Precio $10,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+
+
+        <div style=background-color:#acd8f1 class="Columna-11">
+            <h3 style="font-family: 'Raleway', sans-serif;">Mesa de centro</h3>
+            <p style="font-size: large;">Ideal para salas pequeñas y minimalistas</p>
+            <p style="font-size: large;">Fabricada en madera de pino</p>
+            <span style="font-size: larger;">Precio $4,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+
+
+        <div style=background-color:#acd8f1 class="Columna-12">
+            <h3 style="font-family: 'Raleway', sans-serif;">Sillón de 2 plazas</h3>
+            <p style="font-size: large;">Cómodo y Practico para sala o cuarto de TV </p>
+            <p style="font-size: large;">Tela 100% lavable y finos acabados. En varios colores</p>
+            <span style="font-size: larger;">Precio $7,000</span>
+            <p><button>Agregar al carrito</button></p>
+        </div>
+
+    </main>
+    <!-- 11. Crea una nueva sección que tenga como título las categorías de productos con h2. -->
+    <h2> CATEGORIAS DE PRODUCTOS</h2>
+
+    <!-- 12. Crea una fila con tres columnas. En cada columna vas a poner una categoría y cada
+                categoría de los productos contará con una imagen (incluidas en las imágenes del
+                proyecto) y un enlace (como la página es para efectos demostrativos, coloca un # en
+                el href de la etiqueta a).-->
+    <section class=""Catego">
+        <div>
+            <img src="./categoria1.jpg" alt="">
+            <p><a target href="https://dico.com.mx/df/sala/sofa-y-love-seat.html">Salas</p></a>
+        </div>
+        <div>
+            <img src="./categoria2.jpg" alt="">
+            <p><a href="https://dico.com.mx/df/recamara.html">Espacio TV</a></p>
+        </div>
+        <div>
+            <img src="./categoria3.jpg" alt="">
+            <p><a href="https://dico.com.mx/df/comedor.html">Comedores</a></p>
+        </div>
+    </section>
+
+    <!-- 13. Crea el footer, así como una fila con tres columnas iguales, asignando con h3 a cada
+            una de las columnas. En la primera, coloca el título y crea un nav con las opciones
+            Cocina, Oficina, Jardín, Cochera y Dormitorios de color negro. Deben estar centrados y
+            los enlaces sin decoración-->
+    <!-- 14. En la segunda categoría, coloca como título: “Sobre nosotros” y coloca los enlaces:
+            Nuestra historia, Misión, visión y valores, Carrera, Políticas de privacidad y Términos del
+            servicio. En la categoría de Soporte, coloca Preguntas frecuentes, Ayuda en línea, y
+            Confianza y seguridad.-->
+    <footer>
+        <section class="Pie" >
+            <div>
+                <h2>Categorias</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Cocina</a></li>
+                        <li><a href="">Oficina</a></li>
+                        <li><a href="">Jardin</a></li>
+                        <li><a href="">Cochera</a></li>
+                        <li><a href="">Dormitorios</a></li>
+                    </ul>
+                </nav>
+            </div>
+
+            <div>
+                <h2>Sobre Nosotros</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Historia</a></li>
+                        <li><a href="">Misión, visión y valores</a></li>
+                        <li><a href="">Carrera</a></li>
+                        <li><a href="">Políticas de privacidad</a></li>
+                        <li><a href="">Términos del servicio</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div>
+                <h2>Soporte</h2>
+                <nav>
+                    <ul>
+                        <li><a href="">Preguntas frecuentes</a></li>
+                        <li><a href="">Ayuda en línea</a></li>
+                        <li><a href="">Confianza y seguridad</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </section>
+    </footer>
+    </main>
+</body>
+
+</html>
